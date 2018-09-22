@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1><i><b>Feedback</b></i></h1>
+    <form method="POST" action="https://formspree.io/iBorys.w@gmail.com">
+        <label for="name">Your name:</label>
+        <input id="name" name="name" type="text" placeholder="Your name">
+        <br><br>
+        <label for="surname">Your surname</label>
+        <input id="surname" name="surname" type="text" placeholder="Your surname">
+        <br><br>
+        <label for="email">Your email:</label>
+        <input id="email" name="email" type="text" placeholder="Your email">
+        <br><br>
+        <label for="tel">Your phone number:</label>
+        <input id="tel" name="tel" type="text" placeholder="Your phone number">
+        <br><br>
+        <label>Your gender:</label>
+        <label>
+                <input type="radio" name="gender" id="male" value="male">
+                Male
+            </label>
+        <label>
+                <input type="radio" name="gender" id="female" value="female">
+                Female
+            </label>
+        <label>
+                <input type="radio" name="gender" id="other" value="other">
+                Other
+            </label>
+        <br><br>
+        <label for="age">Your age:</label>
+        <input type="number" name="age" id="age" min="1" max="100" step="1" placeholder="XX">
+        <br><br>
+        <label for="date">Your birthdate:</label>
+        <input type="date" name="date" id="date">
+        <br><br>
+        <label for="file">Add your photo:</label>
+        <input type="file" id="file">
+        <br><br>
+            <label for="question">Виберіть правильну відповідь: Лі Куан</label>
+            <input list="answer" id="question" name="question">
+            <datalist id="answer">
+                        <option value="Ю">
+                        <option value="Я">
+                        <option value="Є">
+                        <option value="Ї">
+                    </datalist>
+            <br><br>
+            <label for="question1">Виберіть правильну відповідь: Ким був Лі Куан Ю?</label>
+            <input list="answer1" id="question1" name="question1">
+            <datalist id="answer1">
+                        <option value="Президентом">
+                        <option value="Прем'єр-міністром">
+                        <option value="Імператором">
+                        <option value="Королем">
+                    </datalist>
+            <br><br>
+            <fieldset>
+                <legend>Яке правило чи заборону ви вважаєте найдивнішим?</legend>
+                <input type="radio" id="Голуб" value="Годування голубів" name="злочин">
+                <label for="Голуб">Годування голубів</label><br/>
+                <input type="radio" id="Wi-Fi" value="Підключення до чужого Wi-Fi" name="злочин">
+                <label for="Wi-Fi">Підключення до чужого Wi-Fi</label><br/>
+                <input type="radio" id="Унітаз" value="Незливання унітазу" name="злочин">
+                <label for="Унітаз">Незливання унітазу</label><br/>
+                <input type="radio" id="Собака" value="Видалення голосових зв'язок собаці" name="злочин">
+                <label for="Собака">Видалення голосових зв'язок собаці</label><br/>
+                <input type="radio" id="Одяг" value="Дрес-код" name="злочин">
+                <label for="Одяг">Дрес-код</label><br/>
+                <input type="radio" id="Інше" value="Інше" name="злочин">
+                <label for="Інше">Інше</label> <input type="text" placeholder="Ваш варіант"><br/>
+            </fieldset>
+            <br><br>
+            <label for="basic">Ваше ставлення до позитивної євгеніки:</label><br><br>
+            <textarea id="basic" name="basic" placeholder="Ваше ставлення до позитивної євгеніки:" cols="100"></textarea>
+            <br><br>
+            <label>Чи пожертвували б ви демократією заради порядку?</label>
+            <label>
+            <input type="radio" name="issue" value="Так">
+            Так
+        </label>
+            <label>
+            <input type="radio" name="issue" value="Ні">
+            Ні 
+        </label>
+            <br><br><br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+</body>
+</html>
