@@ -5,59 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="question_mark.ico" type="image/x-icon">
     <title>Quiz</title>
 </head>
 
 <body>
-    <h1><i><b>Feedback</b></i></h1>
+    <h1 align="center"><i><b><u>Feedback</u></b></i></h1>
     <form method="POST" action="https://formspree.io/iBorys.w@gmail.com">
-        <label for="name">Your name:</label>
-        <input id="name" name="name" type="text" placeholder="Your name">
-        <br><br>
-        <label for="surname">Your surname</label>
-        <input id="surname" name="surname" type="text" placeholder="Your surname">
-        <br><br>
-        <label for="email">Your email:</label>
-        <input id="email" name="email" type="text" placeholder="Your email">
-        <br><br>
-        <label for="tel">Your phone number:</label>
-        <input id="tel" name="tel" type="text" placeholder="Your phone number">
-        <br><br>
-        <label>Your gender:</label>
-        <label>
+        <fieldset>
+            <legend>Respondent's info</legend>
+            <br>
+            <label for="name">Your name:</label>
+                <input id="name" name="name" type="text" placeholder="Your name">
+            <br><br>
+            <label for="surname">Your surname</label>
+                <input id="surname" name="surname" type="text" placeholder="Your surname">
+            <br><br>
+            <label for="email">Your email:</label>
+                <input id="email" name="email" type="text" placeholder="Your email">
+            <br><br>
+            <label for="tel">Your phone number:</label>
+                <input id="tel" name="phone number" type="text" placeholder="Your phone number">
+            <br><br>
+            <label>Your gender:</label>
+            <label>
                 <input type="radio" name="gender" id="male" value="male">
                 Male
             </label>
-        <label>
+            <label>
                 <input type="radio" name="gender" id="female" value="female">
                 Female
             </label>
-        <label>
+            <label>
                 <input type="radio" name="gender" id="other" value="other">
                 Other
             </label>
-        <br><br>
-        <label for="age">Your age:</label>
-        <input type="number" name="age" id="age" min="1" max="100" step="1" placeholder="XX">
-        <br><br>
-        <label for="date">Your birthdate:</label>
-        <input type="date" name="date" id="date">
-        <br><br>
-        <label for="file">Add your photo:</label>
-        <input type="file" id="file">
-        <br><br>
+            <br><br>
+            <label for="age">Your age:</label>
+                <input type="number" name="age" id="age" min="1" max="100" step="1" placeholder="XX">
+            <br><br>
+            <label for="date">Your birthdate:</label>
+                <input type="date" name="date" id="date">
+            <br><br>
+            <label for="photo">Add your photo:</label>
+                <input type="file" id="photo">
+        </fieldset>    
+            <br>
             <label for="question">Виберіть правильну відповідь: Лі Куан</label>
-            <input list="answer" id="question" name="question">
-            <datalist id="answer">
+                <input list="answer" id="question" name="question" placeholder="оберіть варіант">
+                    <datalist id="answer">
                         <option value="Ю">
                         <option value="Я">
                         <option value="Є">
                         <option value="Ї">
                     </datalist>
             <br><br>
-            <label for="question1">Виберіть правильну відповідь: Ким був Лі Куан Ю?</label>
-            <input list="answer1" id="question1" name="question1">
-            <datalist id="answer1">
+                <label for="question1">Виберіть правильну відповідь: Ким був Лі Куан Ю?</label>
+                <input list="answer1" id="question1" name="question1" placeholder="оберіть варіант">
+                    <datalist id="answer1">
                         <option value="Президентом">
                         <option value="Прем'єр-міністром">
                         <option value="Імператором">
@@ -79,11 +84,11 @@
                 <input type="radio" id="Інше" value="Інше" name="злочин">
                 <label for="Інше">Інше</label> <input type="text" placeholder="Ваш варіант"><br/>
             </fieldset>
+            <br>
+            <label for="opinion">Ваше ставлення до позитивної євгеніки:</label><br><br>
+            <textarea id="opinion" name="opinion" placeholder="Ваше ставлення до позитивної євгеніки:" cols="100"></textarea>
             <br><br>
-            <label for="basic">Ваше ставлення до позитивної євгеніки:</label><br><br>
-            <textarea id="basic" name="basic" placeholder="Ваше ставлення до позитивної євгеніки:" cols="100"></textarea>
-            <br><br>
-            <label>Чи пожертвували б ви демократією заради порядку?</label>
+            <label><mark>Чи пожертвували б ви демократією заради порядку?</mark></label>
             <label>
             <input type="radio" name="issue" value="Так">
             Так
@@ -92,9 +97,10 @@
             <input type="radio" name="issue" value="Ні">
             Ні 
         </label>
-            <br><br><br>
+            <br><br>
             <input type="submit">
             <input type="reset">
         </form>
+    <p>Питання складені на основі інформації, викладеної <a href="index.html"><i>тут</i></a>.</p>
 </body>
 </html>
